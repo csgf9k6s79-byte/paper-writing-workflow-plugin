@@ -1,0 +1,28 @@
+{
+  "name": "paper-writing-workflow",
+  "version": "1.0.0",
+  "description": "模块化论文写作全流程工作流：从选题到投稿的 8 阶段学术工具链。整合 nature-skills + ARS + Omniscale 最佳能力，支持单阶段独立调用或全流程自动化。包含详细使用手册和可视化流程图。",
+  "author": {
+    "name": "xyy",
+    "url": ""
+  },
+  "license": "MIT",
+  "homepage": "",
+  "repository": "",
+  "keywords": [
+    "academic",
+    "paper-writing",
+    "workflow",
+    "nature",
+    "research",
+    "writing",
+    "review",
+    "publication",
+    "literature-review",
+    "scientific-writing"
+  ],
+  "category": "academic",
+  "claudeCode": {
+    "minVersion": "1.0.0"
+  }
+}

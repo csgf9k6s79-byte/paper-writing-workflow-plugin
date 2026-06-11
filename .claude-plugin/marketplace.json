@@ -1,0 +1,21 @@
+{
+  "name": "paper-writing-workflow-marketplace",
+  "version": "1.0.0",
+  "description": "Academic paper writing workflow skills for Claude Code — modular 8-stage pipeline from planning to submission",
+  "owner": {
+    "name": "xyy"
+  },
+  "plugins": [
+    {
+      "name": "paper-writing-workflow",
+      "version": "1.0.0",
+      "source": "./",
+      "description": "Modular 8-stage paper writing workflow: Planning → Literature → Writing → Citations → Figures → Review → Revision → Submission. Combines nature-skills + ARS + Omniscale best practices.",
+      "author": {
+        "name": "xyy"
+      },
+      "keywords": ["academic", "paper", "writing", "workflow", "nature", "research"],
+      "category": "academic"
+    }
+  ]
+}
