@@ -88,6 +88,35 @@ Recommended skills (install via Claude Code plugin marketplace):
 | `.claude-plugin/plugin.json` | Plugin metadata |
 | `.claude-plugin/marketplace.json` | Marketplace distribution config |
 
+## Dependencies
+
+**This workflow works with ZERO dependencies.** All 8 stages use `agent()` — Claude Code's generic subagent system — not direct skill invocations. Even without any prerequisite skills installed, every stage runs normally.
+
+### Skill tiers
+
+| Tier | Skills | Effect |
+|------|--------|--------|
+| **None** (zero-dep) | — | All stages work. Quality: Good |
+| **Recommended** | nature + ARS + Omniscale | Domain expertise boost. Quality: Better |
+| **Full stack** | All above + antigravity | Maximum capability. Quality: Best |
+
+### What each skill improves
+
+| Skill | Improves these stages |
+|-------|----------------------|
+| `nature-skills` | Stage 3 (polishing), 4 (citations), 5 (figures), 6 (review) |
+| `academic-research-skills` | Stage 1 (planning), 2 (deep research), 6 (reviewer panel), 7 (revision) |
+| `omniscale-research-skills` | Stage 2 (paper summaries), 6 (logical flaw detection) |
+| `antigravity-awesome-skills` | Stage 8 (LaTeX conversion) |
+
+### Zero-dependency mode
+
+```bash
+Workflow({scriptPath: "paper-workflow.js", args: {stage: 3, lite: true}})
+```
+
+Lite mode replaces all skill-specific references with generic alternatives.
+
 ## License
 
 MIT — feel free to modify and share.

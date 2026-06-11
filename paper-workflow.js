@@ -19,7 +19,20 @@ export const meta = {
 // 用法:
 //   单阶段: Workflow({scriptPath, args: {stage: 3}})
 //   全流程: Workflow({scriptPath, args: {stage: "all"}})
-//   从某阶段开始: Workflow({scriptPath, args: {stage: 4}})
+//   零依赖: Workflow({scriptPath, args: {stage: 3, lite: true}})
+//
+// 依赖说明:
+//   本工作流使用 agent() 通用代理，不直接调用特定 skill。
+//   即使未安装任何前置 skill，全部 8 阶段仍可正常运行。
+//   安装对应 skill 后 agent 在该领域表现更专业，但非必需。
+//
+//   推荐安装（可选，按需）:
+//     - nature-skills      → 提升润色/图表/引文/审稿质量
+//     - academic-research-skills → 提升深度研究和写作流程
+//     - omniscale-research-skills → 提升批判性审查
+//
+//   零依赖模式 (lite: true):
+//     所有 skill 引用替换为通用方法，适合纯 Claude Code 环境。
 //
 // 每阶段结束后需人工确认才进入下一阶段。
 // ================================================================
